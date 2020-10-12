@@ -16,16 +16,22 @@
         <%
             String food="";
             Cookie [] cookies=request.getCookies();
+            if(cookies !=null){
             for(Cookie cookie : cookies){
                 if(cookie.getName().equals("food")){
                     food=cookie.getValue();
                     break;
                 }
             }
+        }
+            
+            
         %>
         <form action="saveCookie" method="POST">
             Your Favorite Food: <input type="text" name="food" value="<%=food%>"/><br/>
             <input type="submit"/>
         </form>
+        <br/>
+        <a href=""logout
     </body>
 </html>
