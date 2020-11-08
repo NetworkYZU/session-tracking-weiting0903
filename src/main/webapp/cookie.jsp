@@ -32,6 +32,6 @@
             <input type="submit"/>
         </form>
         <br/>
-        <a href=""logout
+        <a href=""logout">Logout</a>
     </body>
 </html>

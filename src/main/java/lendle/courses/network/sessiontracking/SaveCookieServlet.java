@@ -40,7 +40,7 @@ public class SaveCookieServlet extends HttpServlet {
         cookie.setMaxAge(120);
         response.addCookie(cookie);
         ///////////////////////////////////////////////////////////////
-        response.sendRedirect("cookie.jsp");
+        response.sendRedirect("cookie.jsp");//轉址讓user不覺得有跳頁面
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
